@@ -12,15 +12,15 @@ const StandsOut = () => {
         </h4>
       </div>
 
-      <div className="flex w-full gap-4">
-        <div className="w-[20%]">
+      <div className="flex w-full gap-4 overflow-x-auto">
+        <div className="w-[20%] hidden md:block">
           <img
             src={standOutHero}
             alt="stand-hero"
             className="object-cover h-full"
           />
         </div>
-        <div className="w-[75%] pr-[131px] pb-20">
+        <div className="w-full md:w-[75%] pr-0 lg:pr-[131px] lg:pb-24 px-2">
           <table className="w-full">
             <thead className="border-b-2 border-dashed">
               <tr className="border-b-2 border-dashed">
@@ -42,7 +42,7 @@ const StandsOut = () => {
             <tbody>
               <tr className="border-b-2 border-dashed text-left">
                 <td>Eligibility</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>Likely Eligible</p>
                 </td>
@@ -58,7 +58,7 @@ const StandsOut = () => {
               </tr>
               <tr className="border-b-2 border-dashed text-left">
                 <td>Term</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>Up to 30 years</p>
                 </td>
@@ -74,7 +74,7 @@ const StandsOut = () => {
               </tr>
               <tr className="border-b-2 border-dashed text-left">
                 <td>Minimum monthly payment</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>$0</p>
                 </td>
@@ -90,7 +90,7 @@ const StandsOut = () => {
               </tr>
               <tr className="border-b-2 border-dashed text-left">
                 <td>Pre-payment penalty</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>No penalty</p>
                 </td>
@@ -106,7 +106,7 @@ const StandsOut = () => {
               </tr>
               <tr className="border-b-2 border-dashed text-left">
                 <td>Interest rate</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>Not applicable</p>
                 </td>
@@ -122,7 +122,7 @@ const StandsOut = () => {
               </tr>
               <tr className="text-left">
                 <td>Lifetime cost</td>
-                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-start gap-2">
+                <td className="border-r-2 border-dashed text-center  p-4 bg-[#AEE5D833] bg-opacity-25 flex flex-col items-center lg:items-start gap-2">
                   <img src={checkIcon} alt="check-icon" />
                   <p>$50,000 to $100,000 over 30years</p>
                 </td>
