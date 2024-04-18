@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-screen bg-hero-section-bg bg-no-repeat bg-cover bg-center">
       <div className="h-screen bg-hero-section-overlay bg-cover">
-        <div className="flex flex-col items-center justify-center h-[90%] my-auto">
+        <div className="flex flex-col items-center justify-center h-[87%] my-auto">
           <h2 className="text-[64px] text-center leading-[82.14px] font-[275] text-white capitalize mb-6">
             Get upto <span className="font-semibold">$500,000</span> from your
             home equity

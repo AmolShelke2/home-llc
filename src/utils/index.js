@@ -15,3 +15,20 @@ const images = [
 ];
 
 export default images;
+
+export const howitworks = [
+  {
+    title: "Get upto $500,000 at 0% interest",
+    description: "In exchange, sell a part of your home to us",
+  },
+  {
+    title: "It’s an investment, not a loan",
+    description:
+      "Enjoy financial flexibility. No monthly payments up to 30 years",
+  },
+  {
+    title: "Settle whenever you're ready",
+    description:
+      "No prepayment penalties, no rush. Buy us out anytime with savings, a refinance, or sale of your home",
+  },
+];

@@ -1,10 +1,12 @@
 import React from "react";
 import HeroSection from "../Components/EquityLanding/HeroSection";
+import HowItWorks from "../Components/EquityLanding/HowItWorks";
 
 const EquityLandingPage = () => {
   return (
-    <div>
+    <div className="bg-white">
       <HeroSection />
+      <HowItWorks />
     </div>
   );
 };
