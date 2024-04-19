@@ -4,11 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import EquityLandingPage from "./pages/EquityLandingPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomeAnalytics from "./pages/HomeAnalytics";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <EquityLandingPage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/equity-landing" element={<EquityLandingPage />} />
+        <Route path="/home-analytics-landing" element={<HomeAnalytics />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
