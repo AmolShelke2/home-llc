@@ -3,7 +3,7 @@ import { ScrollerSection } from "../EquityLanding/ScrollerSection";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen bg-buyer-landing--bg bg-no-repeat bg-cover bg-center">
+    <div className="w-full h-screen bg-home-analytics-landing-bg bg-no-repeat bg-cover bg-center">
       <div className="h-full sm:h-screen bg-hero-section-overlay bg-cover">
         <div className="flex flex-col items-center justify-center h-[87%]">
           <div className="mb-8">

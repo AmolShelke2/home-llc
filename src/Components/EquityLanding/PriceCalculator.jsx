@@ -5,7 +5,7 @@ import downArrow from "../../assets/downArrow.svg";
 
 const PriceCalculator = () => {
   return (
-    <div className="w-full h-auto xl:h-[762px] py-8 xl:py-16">
+    <div className="w-full h-auto xl:h-[762px] py-8 xl:py-16 mb-16">
       <div className="w-full px-4 xl:max-w-[1580px] mx-auto h-full xl:h-[591px]">
         <h4 className="text-[22px] leading-[46px] xl:text-[48px] xl:leading-[66px] text-[#212529] font-semibold mb-12">
           Pricing Calculator

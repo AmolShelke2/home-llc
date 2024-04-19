@@ -3,7 +3,7 @@ import arrowRight from "../../assets/arrow.svg";
 
 const NeedFromUs = () => {
   return (
-    <div className="w-full h-full lg:h-[430px] bg-[#0041A3] mt-10 py-4 lg:pt-[97px]">
+    <div className="w-full h-full lg:h-[430px] bg-[#0041A3] py-8 lg:pt-[97px]">
       <div className="w-full lg:max-w-[1584px] h-full lg:h-[204px] mx-auto">
         <div className="w-full h-full lg:h-[106px] flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-20 px-2 lg:px-0">
           <div className="flex flex-col items-start gap-3 w-full lg:w-[580px]">
