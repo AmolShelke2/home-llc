@@ -12,7 +12,7 @@ const HowItWorks = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 items-start">
           <div>
-            <img src={youtube} alt="youtube" />
+            <img src={youtube} alt="youtube" className="object-cover" />
           </div>
 
           <div className="flex flex-col gap-6">

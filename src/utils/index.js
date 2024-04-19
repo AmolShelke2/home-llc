@@ -1,17 +1,19 @@
-import nberg from "../assets/scroller/nberg.png";
-import layer1 from "../assets/scroller/layer1.png";
-import g14 from "../assets/scroller/g14.png";
-import path20 from "../assets/scroller/path20.png";
-import Vector from "../assets/scroller/Vector.png";
-import MobileArticle from "../assets/scroller/Mobile-Article.png";
-
 const images = [
-  { id: "nberg", image: nberg },
-  { id: "layer1", image: layer1 },
-  { id: "g14", image: g14 },
-  { id: "path20", image: path20 },
-  { id: "Vector", image: Vector },
-  { id: "MobileArticle", image: MobileArticle },
+  { id: "nberg", image: require("../assets/scroller/1.png") },
+  { id: "layer1", image: require("../assets/scroller/2.png") },
+  { id: "g14", image: require("../assets/scroller/3.png") },
+  { id: "path20", image: require("../assets/scroller/4.png") },
+  { id: "Vector", image: require("../assets/scroller/5.png") },
+  { id: "MobileArticle", image: require("../assets/scroller/6.png") },
+  { id: "image7", image: require("../assets/scroller/7.png") },
+  { id: "image8", image: require("../assets/scroller/8.png") },
+  { id: "image9", image: require("../assets/scroller/9.png") },
+  { id: "image10", image: require("../assets/scroller/10.png") },
+  { id: "image11", image: require("../assets/scroller/11.png") },
+  { id: "image12", image: require("../assets/scroller/12.png") },
+  { id: "image13", image: require("../assets/scroller/13.png") },
+  { id: "image14", image: require("../assets/scroller/14.png") },
+  { id: "image15", image: require("../assets/scroller/15.png") },
 ];
 
 export default images;

@@ -3,9 +3,9 @@ import { ScrollerSection } from "./ScrollerSection";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-auto sm:h-screen bg-hero-section-bg bg-no-repeat bg-cover bg-center">
-      <div className="h-screen bg-hero-section-overlay bg-cover">
-        <div className="flex flex-col h-full items-center justify-center sm:h-[87%]">
+    <div className="w-full h-full sm:h-screen bg-hero-section-bg bg-no-repeat bg-cover bg-center">
+      <div className="h-full sm:h-screen bg-hero-section-overlay bg-cover">
+        <div className="flex flex-col h-full items-center justify-center sm:h-[87%] mb-8 sm:mb-0">
           <h2 className="text-2xl lg:text-[64px] text-center lg:leading-[82.14px] font-[275] text-white capitalize mb-6 mt-40">
             Get upto <span className="font-semibold">$500,000</span> from your
             home equity

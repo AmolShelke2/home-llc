@@ -1,23 +1,26 @@
 import React from "react";
 import images from "../../utils";
+import Slider from "react-infinite-logo-slider";
 
 export const ScrollerSection = () => {
   return (
-    <div className="w-full h-[100px] border-t border-white scrolling-logos hover:cursor-pointer py-8 hidden sm:block">
-      <div className="flex justify-center items-center scroll-animation space-x-16 text-white">
+    <div className="w-full h-[100px] border-t border-gray-400 hover:cursor-pointer">
+      <Slider
+        width="200px"
+        duration={40}
+        pauseOnHover={true}
+        blurBorders={false}
+        blurBoderColor={"#fff"}>
         {images.map((src) => (
-          <div
-            className="opacity-70 hover:opacity-100 transition-opacity duration-300"
-            key={src.id}>
+          <Slider.Slide key={src.id}>
             <img
-              height={30}
               src={src.image}
               alt="company-logos"
-              className="h-[30px] w-auto"
+              className=" h-[100px] w-full"
             />
-          </div>
+          </Slider.Slide>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };
