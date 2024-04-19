@@ -3,17 +3,10 @@ const images = [
   { id: "layer1", image: require("../assets/scroller/2.png") },
   { id: "g14", image: require("../assets/scroller/3.png") },
   { id: "path20", image: require("../assets/scroller/4.png") },
-  { id: "Vector", image: require("../assets/scroller/5.png") },
-  { id: "MobileArticle", image: require("../assets/scroller/6.png") },
-  { id: "image7", image: require("../assets/scroller/7.png") },
-  { id: "image8", image: require("../assets/scroller/8.png") },
-  { id: "image9", image: require("../assets/scroller/9.png") },
-  { id: "image10", image: require("../assets/scroller/10.png") },
-  { id: "image11", image: require("../assets/scroller/11.png") },
-  { id: "image12", image: require("../assets/scroller/12.png") },
-  { id: "image13", image: require("../assets/scroller/13.png") },
-  { id: "image14", image: require("../assets/scroller/14.png") },
-  { id: "image15", image: require("../assets/scroller/15.png") },
+  { id: "path50", image: require("../assets/scroller/5.png") },
+  { id: "path40", image: require("../assets/scroller/6.png") },
+  { id: "path70", image: require("../assets/scroller/7.png") },
+  { id: "path80", image: require("../assets/scroller/8.png") },
 ];
 
 export default images;
