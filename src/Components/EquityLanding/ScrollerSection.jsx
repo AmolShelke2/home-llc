@@ -3,7 +3,7 @@ import images from "../../utils";
 
 export const ScrollerSection = () => {
   return (
-    <div className="w-full h-[100px] border-t border-white scrolling-logos hover:cursor-pointer py-8">
+    <div className="w-full h-[100px] border-t border-white scrolling-logos hover:cursor-pointer py-8 hidden sm:block">
       <div className="flex justify-center items-center scroll-animation space-x-16 text-white">
         {images.map((src) => (
           <div

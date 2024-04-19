@@ -20,7 +20,7 @@ const StandsOut = () => {
             className="object-cover h-full"
           />
         </div>
-        <div className="w-full md:w-[75%] pr-0 lg:pr-[131px] lg:pb-24 px-2">
+        <div className="w-full md:w-[75%] pr-0 xl:pr-[131px] xl:pb-24 px-2">
           <table className="w-full">
             <thead className="border-b-2 border-dashed">
               <tr className="border-b-2 border-dashed">
