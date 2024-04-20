@@ -12,7 +12,7 @@ const OptimizeExperience = () => {
           Optimize Your Homebuying Experience
         </h4>
 
-        <div className="flex flex-wrap gap-8 relative">
+        <div className="flex flex-wrap md:grid md:grid-cols-2 items-center gap-8 relative">
           <div>
             <img src={experienc1} alt="experience-1" />
           </div>

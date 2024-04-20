@@ -27,3 +27,14 @@ export const howitworks = [
       "No prepayment penalties, no rush. Buy us out anytime with savings, a refinance, or sale of your home",
   },
 ];
+
+export const faqCategories = [
+  "All",
+  "Buyers",
+  "Owner",
+  "Investor",
+  "Down payment assistance",
+  "Get 1% cashback",
+  "Home consulting",
+  "Down Payment Assistance",
+];
