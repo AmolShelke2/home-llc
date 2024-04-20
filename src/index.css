@@ -14,3 +14,19 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ed5272;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fff; /* Color of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ed5272; /* Color of the handle */
+}

@@ -33,7 +33,6 @@ export const faqCategories = [
   "Buyers",
   "Owner",
   "Investor",
-  "Down payment assistance",
   "Get 1% cashback",
   "Home consulting",
   "Down Payment Assistance",
