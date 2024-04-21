@@ -37,7 +37,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="w-full h-full px-2 sm:h-[660px] bg-[#0041A3] relative">
+    <div className="w-full h-full px-2 2xl:h-[660px] bg-[#0041A3] relative py-4">
       <img src={calculatorSVG} alt="calculator" className="absolute right-0" />
       <h4 className="text-center text-2xl  sm:text-[40px] sm:leading-[82.14px] font-semibold text-[#ffffff] mb-10 pt-20">
         Calculator
@@ -87,7 +87,7 @@ const Calculator = () => {
         </div>
 
         {/* right side */}
-        <div className="w-full md:w-[50%] lg:pl-[54px]">
+        <div className="w-full md:w-[50%] mt-4 md:mt-0 lg:pl-[54px]">
           <div className="flex items-center gap-4 mb-8 sm:mb-16">
             <img src={dollarSvg} alt="dollar" />
             <h4 className="text-2xl sm:text-[48px] font-normal sm:leading-[69px] text-white">
