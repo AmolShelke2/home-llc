@@ -1,5 +1,5 @@
 import React from "react";
-import images from "../../utils";
+import images from "../../data";
 import Slider from "react-infinite-logo-slider";
 
 export const ScrollerSection = () => {

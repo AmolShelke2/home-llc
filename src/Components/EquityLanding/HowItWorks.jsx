@@ -1,6 +1,6 @@
 import React from "react";
 import youtube from "../../assets/youtube-image.png";
-import { howitworks } from "../../utils";
+import { howitworks } from "../../data";
 
 const HowItWorks = () => {
   return (

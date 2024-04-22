@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { faqCategories } from "../../utils";
+import { faqCategories } from "../../data";
 import { faqsData } from "./faqData";
 
 const FaqSection = () => {

@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeAnalytics from "./pages/HomeAnalytics";
 import BuyerLandingPage from "./pages/BuyerLandingPage";
 import FaqPage from "./pages/FaqPage";
+import BlogsPage from "./pages/BlogsPage";
+import DetailsPage from "./pages/DetailsPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +21,8 @@ root.render(
         <Route path="/home-analytics-landing" element={<HomeAnalytics />} />
         <Route path="/buyer-landing" element={<BuyerLandingPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
+        <Route exact path="/details/:id" element={<DetailsPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
