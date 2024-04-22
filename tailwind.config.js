@@ -10,6 +10,7 @@ module.exports = {
         "hero-section-overlay": "url('../src/assets/Hero-Section-overlay.png')",
         "faq-landing": "url('../src/assets/faq-landing-bg.png')",
         "blogs-landing": "url('../src/assets/blogs-page-bg.png')",
+        "seller-landing": "url('../src/assets/seller-landing-bg.png')",
       },
       placeholderColor: ["responsive", "dark", "focus", "hover"], // enable placeholder colors
     },

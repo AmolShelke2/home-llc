@@ -10,6 +10,7 @@ import BuyerLandingPage from "./pages/BuyerLandingPage";
 import FaqPage from "./pages/FaqPage";
 import BlogsPage from "./pages/BlogsPage";
 import DetailsPage from "./pages/DetailsPage";
+import Seller from "./pages/Seller";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route exact path="/details/:id" element={<DetailsPage />} />
+        <Route exact path="/seller" element={<Seller />} />
       </Routes>
     </Router>
   </React.StrictMode>
