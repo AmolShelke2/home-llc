@@ -11,6 +11,8 @@ module.exports = {
         "faq-landing": "url('../src/assets/faq-landing-bg.png')",
         "blogs-landing": "url('../src/assets/blogs-page-bg.png')",
         "seller-landing": "url('../src/assets/seller-landing-bg.png')",
+        "calendy-contact-section":
+          "url('../src/assets/calendy-contact-bg.png')",
       },
       placeholderColor: ["responsive", "dark", "focus", "hover"], // enable placeholder colors
     },

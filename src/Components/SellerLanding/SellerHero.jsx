@@ -5,7 +5,7 @@ const SellerHero = () => {
   return (
     <div className="w-full h-full sm:h-screen bg-seller-landing bg-no-repeat bg-cover bg-center">
       <div className="h-full sm:h-screen bg-hero-section-overlay bg-cover">
-        <div className="flex flex-col h-full items-center sm:h-[87%] mb-24 sm:mb-0">
+        <div className="flex flex-col h-full items-center sm:justify-center sm:h-[87%] mb-16 sm:mb-0">
           <h2 className="text-[32px] leading-[42px] lg:text-[64px] text-center lg:leading-[82.14px] font-[275] text-white capitalize mb-8 mt-40">
             Unleash the <span className="font-semibold">highest value</span>
             {""} for your home
@@ -58,7 +58,7 @@ const SellerHero = () => {
                 Stress Free
               </p>
             </div>
-            <div className="flex flex-col gap-1 items-center justify-center sm:h-[64px] sm:mb-12 px-4 sm:p-0">
+            <div className="flex gap-1 flex-col items-center justify-center sm:h-[64px] px-4 sm:px-0">
               <svg
                 width="19"
                 height="20"
@@ -82,10 +82,11 @@ const SellerHero = () => {
           </div>
 
           {/* hero buttons */}
-          <div className="w-full sm:max-w-[710px] h-auto sm:h-[60px]">
+          <div className="w-full sm:h-[60px] sm:flex justify-center items-center sm:mt-20">
             <button
               className="border border-white rounded-[50px] h-full w-full sm:w-[310px]
-             text-white py-3 sm:py-0 px-[10px] text-center sm:text-[22px] sm:leading-[32px] hover:bg-[#ED5272] hover:border-none">
+             text-white py-3 sm:py-0 px-[10px] text-center sm:text-[22px] sm:leading-[32px] hover:bg-[#ED5272]
+             hover:border-none">
               Schedule a call
             </button>
           </div>
