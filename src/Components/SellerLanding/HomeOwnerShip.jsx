@@ -3,7 +3,7 @@ import React from "react";
 const HomeOwnerShip = () => {
   return (
     <div className="w-full h-[870px] py-[86px] bg-[#0041A3]">
-      <div className="w-full flex flex-col gap-[196px] max-w-[1400px] mx-auto h-[653px]">
+      <div className="w-full flex flex-col px-8 2xl:px-0 gap-[196px] 2xl:max-w-[1400px] 2xl:mx-auto h-[653px]">
         <h4 className="text-center text-white text-[48px] leading-[66px] font-semibold capitalize">
           Your Journey to homeownership
         </h4>
