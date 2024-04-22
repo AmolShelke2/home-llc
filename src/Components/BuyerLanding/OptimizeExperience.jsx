@@ -25,8 +25,6 @@ const OptimizeExperience = () => {
           <div>
             <img src={experienc4} alt="experience-4" />
           </div>
-          <div className="hidden 2xl:block xl:absolute top-[290px] w-full border-b border-[#ACB5BD]"></div>
-          <div className="hidden 2xl:block xl:absolute top-[290px] left-[475px] w-[600px] rotate-90 border-b border-[#ACB5BD]"></div>
         </div>
       </div>
     </div>

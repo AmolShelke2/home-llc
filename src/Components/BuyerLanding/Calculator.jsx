@@ -18,10 +18,12 @@ const Calculator = () => {
     if (value.trim() === "") {
       setHomeValue(0);
       setSavings(0);
+      console.log(homeValue);
     } else {
       const numericValue = parseFloat(value.replace(/[^\d.]/g, ""));
-      setHomeValue(numericValue);
-      calculateSavings(numericValue);
+      setHomeValue(isNaN(numericValue) ? 0 : numericValue); // Set home value to 0 if NaN
+      calculateSavings(isNaN(numericValue) ? 0 : numericValue);
+      console.log(homeValue);
     }
   };
   const handleIncrement = () => {
@@ -37,15 +39,15 @@ const Calculator = () => {
   };
 
   return (
-    <div className="w-full h-full px-2 2xl:h-[660px] bg-[#0041A3] relative py-4">
+    <div className="w-full h-full px-2 2xl:h-[660px] bg-[#0041A3] relative py-4 border-b sm:border-b-0">
       <img src={calculatorSVG} alt="calculator" className="absolute right-0" />
       <h4 className="text-center text-2xl  sm:text-[40px] sm:leading-[82.14px] font-semibold text-[#ffffff] mb-10 pt-20">
         Calculator
       </h4>
 
-      <div className="flex flex-col sm:gap-2 lg:flex-row w-full 2xl:max-w-[1580px] xl:mx-auto px-2">
+      <div className="flex flex-col gap-8 sm:gap-2 lg:flex-row w-full 2xl:max-w-[1580px] xl:mx-auto px-8 2xl:px-2">
         {/* left side */}
-        <div className="w-full 2xl:w-[50%] flex flex-col gap-8 sm:gap-20 border-r-0 lg:border-r">
+        <div className="w-full md:w-[50%] flex flex-col gap-8 sm:gap-20 border-r-0 lg:border-r sm:px-4">
           <div className="flex flex-col">
             <label className="text-xl font-normal text-white mb-4">
               Your Home Value is:
@@ -56,7 +58,7 @@ const Calculator = () => {
                 placeholder="$1,970,000"
                 value={`$${homeValue.toLocaleString()}`}
                 onChange={handleInputChange}
-                className="w-full lg:w-[650px] border-b bg-transparent outline-none text-[36px] font-semibold h-[54px] text-white placeholder:text-white mt-1 py-2"
+                className="w-full 2xl:w-[650px] border-b bg-transparent outline-none text-[36px] font-semibold h-[54px] text-white placeholder:text-white mt-1 py-2"
               />
               <div>
                 <MdKeyboardArrowUp
@@ -77,7 +79,7 @@ const Calculator = () => {
               State:
             </label>
             <input
-              className="lg:w-[650px] border-b bg-transparent outline-none xl:text-[36px] font-semibold h-[54px] text-white placeholder:text-white mt-1 py-2"
+              className="w-full 2xl:w-[650px] border-b bg-transparent outline-none xl:text-[36px] font-semibold h-[54px] text-white placeholder:text-white mt-1 py-2"
               type="text"
               placeholder="California"
               value={stateValue}
@@ -106,7 +108,7 @@ const Calculator = () => {
             <p className="text-white lg:text-xl font-medium capitalize">
               working with us :
             </p>
-            <button className="text-xl sm:text-[48px] sm:leading-[70px] font-semibold text-white px-8 py-2 2xl:w-[312px] md:h-[90px] rounded-lg bg-[#ED5272]">
+            <button className="text-xl sm:text-[48px] sm:leading-[70px] font-semibold text-white px-8 py-2 2xl:w-fit md:h-[90px] rounded-lg bg-[#ED5272]">
               {savings.toLocaleString("en-US", {
                 style: "currency",
                 currency: "USD",
