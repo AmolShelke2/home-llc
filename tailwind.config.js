@@ -13,6 +13,7 @@ module.exports = {
         "seller-landing": "url('../src/assets/seller-landing-bg.png')",
         "calendy-contact-section":
           "url('../src/assets/calendy-contact-bg.png')",
+        "home-equity-qualify": "url('../src/assets/qualify-landing-bg.png')",
       },
       placeholderColor: ["responsive", "dark", "focus", "hover"], // enable placeholder colors
     },
