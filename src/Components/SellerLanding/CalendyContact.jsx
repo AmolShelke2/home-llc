@@ -12,7 +12,7 @@ const CalendyContact = () => {
         Today!
       </p>
 
-      <div className="w-[369px] h-[744px] sm:w-[1004px] sm:h-[680px] mx-auto mt-16">
+      <div className="w-[369px] h-[744px] sm:w-[1004px] sm:h-[680px] mx-auto mt-16 pb-4 sm:mb-0">
         <iframe
           className="h-full w-full hide-scrollbar rounded-lg"
           title="calendy"
