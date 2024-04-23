@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 const WhatWillYouOweUs = () => {
   return (
     <div className="w-full h-full sm:h-[728px] bg-[#0041A3] flex flex-col sm:justify-center text-white py-[40px] sm:py-0">
-      <div className="sm:px-[130px] flex  flex-col sm:flex-row sm:gap-[192px] items-center">
+      <div className="2xl:px-[130px] flex  flex-col sm:flex-row sm:gap-[40px] sm:px-4 2xl:gap-[192px] items-center">
         <div>
           <h5
             className="text-[20px] leading-[29px] whitespace-nowrap sm:text-[36px] text-center
@@ -55,8 +55,8 @@ const WhatWillYouOweUs = () => {
             conditions apply.
           </p>
         </div>
-        <div className="w-full">
-          <div className="flex items-center gap-10 mb-[70px]">
+        <div className="w-full mb-8 2xl:mb-0">
+          <div className="flex items-center gap-10 mb-[70px] px-4 sm:px-0">
             <h5 className="text-[20px] whitespace-nowrap leading-[29px] sm:text-[24px] sm:leading-[34.8px] font-normal">
               Future home value
             </h5>

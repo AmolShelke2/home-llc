@@ -120,3 +120,31 @@ export const blog = [
     date: "February 20, 2018",
   },
 ];
+
+export const cardsData = [
+  {
+    id: 1,
+    title: "Effortless Search & Guidance",
+    desc: "Connect with a dedicated agent and leverage data-driven analytics to find your dream home faster",
+  },
+  {
+    id: 2,
+    title: "Seamless Tours & Expert Support",
+    desc: "Enjoy a smooth touring experience and receive expert assistance throughout your entire home buying journey.",
+  },
+  {
+    id: 3,
+    title: "Negotiations & Placing an Offer",
+    desc: "Our agents will help you negotiate and submit digital offers. Enjoy a smooth and efficient process from search to closing.",
+  },
+  {
+    id: 4,
+    title: "Enhanced Partnerships",
+    desc: "Benefit from our network of exclusive partnerships designed to make your homebuying experience even smoother.",
+  },
+  {
+    id: 5,
+    title: "1% Commission",
+    desc: "Celebrate owning your dream home for less! Our 1% commission saves you thousands compared to traditional agents.",
+  },
+];

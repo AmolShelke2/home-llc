@@ -5,29 +5,14 @@ const BuyerHero = () => {
   return (
     <div className="w-full h-full sm:h-screen bg-buyer-landing-bg bg-no-repeat bg-cover bg-center">
       <div className="h-full sm:h-screen bg-hero-section-overlay bg-cover">
-        <div className="flex flex-col h-full items-center justify-center sm:h-[87%] mb-8 sm:mb-0">
+        <div className="flex flex-col h-full items-center justify-center sm:h-[83%] mb-8 sm:mb-[62px]">
           <h2 className="text-3xl lg:text-[64px] text-center lg:leading-[82.14px] font-[275] text-white capitalize mb-8 mt-40">
-            Buy your home online
+            Home Buying Reimagined
           </h2>
 
-          {/* row items */}
-          <div className="flex flex-col md:flex-row gap-2 sm:gap-8">
-            <div className="border-r-0 sm:border-r flex flex-col items-center justify-center border-white sm:h-[64px]">
-              <p className="text-white mx-14 mb-2 sm:my-8 text-lg  sm:text-[22px] sm:leading-[33px] font-semibold capitalize whitespace-nowrap">
-                50% lower commission
-              </p>
-            </div>
-            <div className="border-r-0 sm:border-r flex flex-col items-center justify-center border-white sm:h-[64px]">
-              <p className="text-white mx-14 mb-2 sm:my-8 text-lg  sm:text-[22px] sm:leading-[33px] font-semibold capitalize whitespace-nowrap">
-                100% better analytics
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center sm:h-[64px] mb-12">
-              <p className="text-white mx-14 mb-2 sm:my-8 text-lg  sm:text-[22px] sm:leading-[33px] font-semibold capitalize whitespace-nowrap">
-                24x7 Support
-              </p>
-            </div>
-          </div>
+          <h3 className="text-xl leading-[29px] mb-[80px] sm:text-[22px] font-semibold sm:leading-[33px] text-white text-center sm:mb-[137px]">
+            Convenient, Stress-free & Remarkably Affordable
+          </h3>
 
           {/* hero buttons */}
           <div className="sm:max-w-[710px] h-auto sm:h-[60px] flex flex-col sm:flex-row gap-4 sm:gap-8">

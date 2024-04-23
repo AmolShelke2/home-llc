@@ -77,7 +77,7 @@ const HomeEquityHero = () => {
 
       <ScrollerSection />
 
-      <div className="w-[50px] mx-auto mt-[40px]">
+      <div className="w-[50px] mx-auto mt-[40px] pb-8">
         <FaChevronDown size={42} className="text-[#ED5272]" />
       </div>
     </div>
