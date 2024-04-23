@@ -46,7 +46,7 @@ const NeedFromUs = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-between px-[27px] sm:hidden   ">
+        <div className="flex items-center justify-between px-[27px] sm:hidden">
           <svg
             width="32"
             height="32"

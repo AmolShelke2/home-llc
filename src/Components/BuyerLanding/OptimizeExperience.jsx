@@ -10,10 +10,10 @@ const OptimizeExperience = () => {
           <div
             className="w-full h-full sm:h-[395px] sm:w-[490px] rounded-lg border border-black py-8 px-6 sm:pt-[121px] sm:px-[44px]"
             key={card.id}>
-            <h4 className="sm:w-[368px] sm:h-[108px] mb-4 text-[36px] leading-[54px] font-semibold">
+            <h4 className="sm:w-[368px] sm:h-[108px] mb-4 text-[16px] leading-[26px] sm:text-[36px] sm:leading-[54px] font-semibold">
               {card.title}
             </h4>
-            <p className="text-[22px] leading-[32px] font-normal">
+            <p className="text-[14px] leading-[19px] sm:text-[22px] sm:leading-[32px] font-normal">
               {card.desc}
             </p>
           </div>
