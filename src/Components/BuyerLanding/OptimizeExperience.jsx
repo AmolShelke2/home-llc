@@ -4,7 +4,7 @@ import heroImg from "../../assets/buyer-landing/hero-img.png";
 
 const OptimizeExperience = () => {
   return (
-    <div className="w-full py-8 px-8 sm:h-[1080px] sm:px-[75px] sm:py-[121px] sm:p-16 bg-[#FEF9F0] h-full relative">
+    <div className="w-full py-8 px-8 2xl:h-[1080px] sm:px-[75px] sm:py-[121px] sm:p-16 bg-[#FEF9F0] h-full relative">
       <div className="flex flex-wrap justify-start items-start gap-[50px]">
         {cardsData.map((card) => (
           <div
