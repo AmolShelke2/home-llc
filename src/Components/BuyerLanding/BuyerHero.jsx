@@ -10,12 +10,12 @@ const BuyerHero = () => {
             Home Buying Reimagined
           </h2>
 
-          <h3 className="text-xl leading-[29px] mb-[80px] sm:text-[22px] font-semibold sm:leading-[33px] text-white text-center sm:mb-[137px]">
+          <h3 className="text-xl leading-[29px] sm:text-[22px] font-semibold sm:leading-[33px] text-white text-center">
             Convenient, Stress-free & Remarkably Affordable
           </h3>
 
           {/* hero buttons */}
-          <div className="sm:max-w-[710px] h-auto sm:h-[60px] flex flex-col sm:flex-row gap-4 sm:gap-8">
+          <div className="sm:max-w-[710px] h-auto sm:h-[60px] flex flex-col sm:flex-row gap-4 sm:gap-8 sm:mt-28">
             <button className="border border-white rounded-[50px] h-full w-[310px] text-white py-3 sm:py-0 px-[10px] text-center text-[22px] leading-[32px]">
               Schedule a call
             </button>

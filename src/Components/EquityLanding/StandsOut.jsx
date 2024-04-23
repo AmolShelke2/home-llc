@@ -5,9 +5,11 @@ import checkIcon from "../../assets/check-icon.svg";
 
 const StandsOut = () => {
   return (
-    <div className="h-full w-full bg-[#FEF9F0] pt-[90px]">
-      <div className="w-full px-4 xl:max-w-[1580px] mx-auto mb-20">
-        <h4 className="text-[22px] leading-[46px] xl:text-[48px] xl:leading-[66px] text-[#18191F] font-semibold mb-10 capitalize">
+    <div className="h-full w-full bg-[#FEF9F0] py-6 px-4 sm:px-0 sm:pt-[90px]">
+      <div className="w-full px-4 xl:max-w-[1580px] mx-auto mb-8 sm:mb-20">
+        <h4
+          className="text-[22px] text-center sm:text-left w-full leading-[46px] xl:text-[48px] 
+        xl:leading-[66px] text-[#18191F] font-semibold mb-10 capitalize">
           How <span className="text-[#ED5272]">Home.LLC</span> stands out
         </h4>
       </div>

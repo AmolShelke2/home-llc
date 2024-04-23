@@ -5,13 +5,16 @@ import downArrow from "../../assets/downArrow.svg";
 
 const PriceCalculator = () => {
   return (
-    <div className="w-full h-auto xl:h-[762px] py-8 xl:py-16 mb-16">
-      <div className="w-full px-4 xl:max-w-[1580px] mx-auto h-full xl:h-[591px]">
-        <h4 className="text-[22px] leading-[46px] xl:text-[48px] xl:leading-[66px] text-[#212529] font-semibold mb-12">
+    <div className="w-full h-auto xl:h-[762px] xl:py-16 mb-16">
+      <div className="w-full xl:max-w-[1580px] mx-auto h-full xl:h-[591px]">
+        <h4
+          className="text-[20px] leading-[30px] xl:text-[48px] xl:leading-[66px] text-white sm:text-[#212529]
+         sm:font-semibold mb-10 text-center sm:text-left w-full bg-[#ED5272]
+          sm:bg-transparent py-[16px] sm:py-0 uppercase sm:capitalize font-normal">
           Pricing Calculator
         </h4>
 
-        <div className="inline-flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[90px] overflow-hidden">
+        <div className="inline-flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[90px] overflow-hidden px-1">
           <div className="w-full h-auto lg:w-[558px] lg:h-[562px]">
             <div className="flex gap-12 p-4 items-center border-b border-[#B2B2B2] mb-2">
               <p className="capitalize text-sm lg:text-xl text-[#343A40] font-light w-[120px] lg:w-[199px]">
@@ -61,7 +64,7 @@ const PriceCalculator = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-12 p-4 items-center border-b border-[#B2B2B2] mb-2">
+            <div className="flex gap-4 sm:gap-12 p-4 items-center border-b border-[#B2B2B2] mb-2">
               <p className="capitalize text-sm lg:text-xl text-[#343A40] font-light w-[120px] lg:w-[199px]">
                 when i settled in
               </p>
@@ -76,7 +79,7 @@ const PriceCalculator = () => {
                       <img
                         src={upArrow}
                         alt="up-arrow"
-                        width={10}
+                        width={14}
                         height={16}
                       />
                     </button>
@@ -84,7 +87,7 @@ const PriceCalculator = () => {
                       <img
                         src={downArrow}
                         alt="down-arrow"
-                        width={10}
+                        width={14}
                         height={16}
                       />
                     </button>
@@ -99,7 +102,7 @@ const PriceCalculator = () => {
                       <img
                         src={upArrow}
                         alt="up-arrow"
-                        width={10}
+                        width={14}
                         height={16}
                       />
                     </button>
@@ -107,7 +110,7 @@ const PriceCalculator = () => {
                       <img
                         src={downArrow}
                         alt="down-arrow"
-                        width={10}
+                        width={14}
                         height={16}
                       />
                     </button>

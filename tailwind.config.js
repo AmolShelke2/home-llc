@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-section-bg": "url('../src/assets/Hero-Section-bg.png')",
+        "hero-section-mobile-bg":
+          "url('../src/assets/Hero-Section-bg-mobile.png')",
         "home-analytics-landing-bg":
           "url('../src/assets/home-analytics-bg.png')",
         "buyer-landing-bg": "url('../src/assets/buyer-landing-bg.png')",
