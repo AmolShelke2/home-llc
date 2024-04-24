@@ -1,9 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import calculatorImage from "../../assets/calculator-image.png";
 import upArrow from "../../assets/upArrow.svg";
 import downArrow from "../../assets/downArrow.svg";
 
 const PriceCalculator = () => {
+  const [homeValue, setHomeValue] = useState(500000);
+  const [cashValue, setCashValue] = useState(75000);
+  const [years, setYears] = useState(5);
+  const [months, setMonths] = useState(0);
+  const [homeWorth, setHomeWorth] = useState(75000);
+  const [shareValue, setShareValue] = useState(75000);
+
+  const handleValueChange = (valueSetter, increment) => {
+    valueSetter((prevValue) => prevValue + increment);
+  };
+
+  const handleHomeValueChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setHomeValue(newValue || 0);
+  };
+
+  const handleCashValueChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setCashValue(newValue || 0);
+  };
+
+  const handleYearsChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setYears(newValue || 0);
+  };
+
+  const handleMonthsChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setMonths(newValue || 0);
+  };
+
+  const handleHomeWorthChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setHomeWorth(newValue || 0);
+  };
+
+  const handleShareValueChange = (event) => {
+    const newValue = parseInt(event.target.value.replace(/[^\d]/g, ""), 10);
+    setShareValue(newValue || 0);
+  };
+
   return (
     <div className="w-full h-auto xl:h-[762px] xl:py-16 mb-16">
       <div className="w-full xl:max-w-[1580px] mx-auto h-full xl:h-[591px]">
@@ -14,7 +55,7 @@ const PriceCalculator = () => {
           Pricing Calculator
         </h4>
 
-        <div className="inline-flex flex-col lg:flex-row items-center gap-[30px] lg:gap-[90px] overflow-hidden px-1">
+        <div className="inline-flex w-full flex-col lg:flex-row items-center gap-[20px] lg:gap-[90px] overflow-hidden px-2">
           <div className="w-full h-auto lg:w-[558px] lg:h-[562px]">
             <div className="flex gap-12 p-4 items-center border-b border-[#B2B2B2] mb-2">
               <p className="capitalize text-sm lg:text-xl text-[#343A40] font-light w-[120px] lg:w-[199px]">
@@ -22,14 +63,18 @@ const PriceCalculator = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <p className="text-[#212529] font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                  $500,000
-                </p>
+                <input
+                  type="text"
+                  value={`$${homeValue.toLocaleString()}`}
+                  onChange={handleHomeValueChange}
+                  placeholder="$500,000"
+                  className="border-none outline-none w-[175px] text-[36px] leading-[54px] font-semibold text-[#212529]"
+                />
                 <div className="flex flex-col gap-2 items-center">
-                  <button>
+                  <button onClick={() => handleValueChange(setHomeValue, 1)}>
                     <img src={upArrow} alt="up-arrow" width={10} height={16} />
                   </button>
-                  <button>
+                  <button onClick={() => handleValueChange(setHomeValue, -1)}>
                     <img
                       src={downArrow}
                       alt="down-arrow"
@@ -45,15 +90,22 @@ const PriceCalculator = () => {
                 I can get upto
               </p>
 
-              <div className="flex items-center gap-4">
-                <p className="text-[#212529] flex items-center gap-2 font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                  $75,000 <span className="font-light text-sm">In Cash</span>
-                </p>
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={`$${cashValue.toLocaleString()}`}
+                  onChange={handleCashValueChange}
+                  placeholder="$75000"
+                  className="border-none outline-none w-[145px] text-[36px] leading-[54px] font-semibold text-[#212529] mr-2"
+                />
+                <span className="font-light text-sm whitespace-nowrap">
+                  In Cash
+                </span>
                 <div className="flex flex-col gap-2 items-center">
-                  <button>
+                  <button onClick={() => handleValueChange(setCashValue, 1)}>
                     <img src={upArrow} alt="up-arrow" width={10} height={16} />
                   </button>
-                  <button>
+                  <button onClick={() => handleValueChange(setCashValue, -1)}>
                     <img
                       src={downArrow}
                       alt="down-arrow"
@@ -71,11 +123,21 @@ const PriceCalculator = () => {
 
               <div className="inline-flex items-center gap-4">
                 <div className="flex items-center gap-4">
-                  <p className="text-[#212529] flex items-center gap-2 font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                    5 <span className="font-light text-sm">years</span>
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="text"
+                      value={years}
+                      onChange={handleYearsChange}
+                      placeholder="5"
+                      className="border-none outline-none w-[23px] text-[36px] leading-[54px] font-semibold text-[#212529] mr-1"
+                    />
+                    <span className="font-light text-sm whitespace-nowrap">
+                      in years
+                    </span>
+                  </div>
+
                   <div className="flex flex-col gap-2 items-center">
-                    <button>
+                    <button onClick={() => handleValueChange(setYears, 1)}>
                       <img
                         src={upArrow}
                         alt="up-arrow"
@@ -83,7 +145,7 @@ const PriceCalculator = () => {
                         height={16}
                       />
                     </button>
-                    <button>
+                    <button onClick={() => handleValueChange(setYears, -1)}>
                       <img
                         src={downArrow}
                         alt="down-arrow"
@@ -94,11 +156,20 @@ const PriceCalculator = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <p className="text-[#212529] flex items-center gap-2 font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                    0 <span className="font-light text-sm">Months</span>
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="text"
+                      value={months}
+                      onChange={handleMonthsChange}
+                      placeholder="5"
+                      className="border-none outline-none w-[23px] text-[36px] leading-[54px] font-semibold text-[#212529] mr-1"
+                    />
+                    <span className="font-light text-sm whitespace-nowrap">
+                      months
+                    </span>
+                  </div>
                   <div className="flex flex-col gap-2 items-center">
-                    <button>
+                    <button onClick={() => handleValueChange(setMonths, 1)}>
                       <img
                         src={upArrow}
                         alt="up-arrow"
@@ -106,7 +177,7 @@ const PriceCalculator = () => {
                         height={16}
                       />
                     </button>
-                    <button>
+                    <button onClick={() => handleValueChange(setMonths, -1)}>
                       <img
                         src={downArrow}
                         alt="down-arrow"
@@ -118,20 +189,25 @@ const PriceCalculator = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-12 p-4 items-center border-b border-[#B2B2B2] mb-2">
+            <div className="flex gap-12 p-4 items-center justify-start border-b border-[#B2B2B2] mb-2">
               <p className="capitalize text-sm lg:text-xl text-[#343A40] font-light w-[120px] lg:w-[199px]">
                 and my home’s value is
               </p>
 
-              <div className="flex items-center gap-4">
-                <p className="text-[#212529] font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                  $75,000
-                </p>
+              <div className="flex justify-start items-center gap-4">
+                <input
+                  type="text"
+                  value={`$${homeWorth.toLocaleString()}`}
+                  onChange={handleHomeWorthChange}
+                  placeholder="$75,000"
+                  className="border-none outline-none w-[148px] text-[36px] leading-[54px] font-semibold text-[#212529]"
+                />
+
                 <div className="flex flex-col gap-2 items-center">
-                  <button>
+                  <button onClick={() => handleValueChange(setHomeWorth, 1)}>
                     <img src={upArrow} alt="up-arrow" width={10} height={16} />
                   </button>
-                  <button>
+                  <button onClick={() => handleValueChange(setHomeWorth, -1)}>
                     <img
                       src={downArrow}
                       alt="down-arrow"
@@ -148,14 +224,18 @@ const PriceCalculator = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <p className="text-[#212529] font-semibold text-[24px] lg:text-[36px] leading-[38px] lg:leading-[54px]">
-                  $75,000
-                </p>
+                <input
+                  type="text"
+                  value={`$${shareValue.toLocaleString()}`}
+                  onChange={handleShareValueChange}
+                  placeholder="$75,000"
+                  className="border-none outline-none w-[148px] text-[36px] leading-[54px] font-semibold text-[#212529]"
+                />
                 <div className="flex flex-col gap-2 items-center">
-                  <button>
+                  <button onClick={() => handleValueChange(setShareValue, 1)}>
                     <img src={upArrow} alt="up-arrow" width={10} height={16} />
                   </button>
-                  <button>
+                  <button onClick={() => handleValueChange(setShareValue, -1)}>
                     <img
                       src={downArrow}
                       alt="down-arrow"
