@@ -15,17 +15,21 @@ const PressHero = () => {
           <div className="max-w-[1571px] h-[670px] mx-auto flex items-end gap-[113px]">
             <div className="w-[1012px] h-[416px]">
               <div className="mb-[80px]">
-                <img src={yahoo} alt="yahoo" />
+                <img
+                  src={selectedArticle.companyLogo}
+                  height={59}
+                  width={159}
+                  alt="yahoo"
+                />
               </div>
 
               <div>
                 <span className="text-[22px] leading-[17px] text-[#B0AEAE] mb-[15px]">
-                  July 31, 2021
+                  {selectedArticle.date}
                 </span>
 
                 <h4 className="text-[64px] leading-[89px] font-[275px] text-white mb-[50px] ">
-                  6 ways to get a mortgage even if you think you aren’t
-                  eligible.
+                  {selectedArticle.title}
                 </h4>
 
                 <div className="flex items-center gap-[15px] text-white">
@@ -56,7 +60,10 @@ const PressHero = () => {
             </div>
             <div className="w-[446px] h-full flex flex-col gap-[50px]">
               {pressData.map((data) => (
-                <button className="w-full h-[130px] flex items-center gap-[22px] bg-[#ffffff] bg-opacity-[15%] rounded-md" onClick={() => setSelectedArticle(data)}>
+                <button
+                  className="w-full h-[130px] flex items-center gap-[22px] bg-[#ffffff] bg-opacity-[15%] rounded-md"
+                  onClick={() => setSelectedArticle(data)}
+                  key={data.id}>
                   <div className="w-[25%] h-[130px] object-cover">
                     <img
                       src={data.image}
