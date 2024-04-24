@@ -19,13 +19,15 @@ const CommisionCalculator = () => {
     const { value } = event.target;
     if (value.trim() === "") {
       setHomeValue(0);
-      console.log(homeValue);
     } else {
       const numericValue = parseFloat(value.replace(/[^\d.]/g, ""));
       setHomeValue(isNaN(numericValue) ? 0 : numericValue); // Set home value to 0 if NaN
-      console.log(homeValue);
     }
   };
+
+  // Calculate commissions
+  const commission1Percent = homeValue * 0.01;
+  const commission3Percent = homeValue * 0.03;
 
   return (
     <div className="w-full h-full sm:h-[850px] bg-[#FEF9F0] pb-[90px] sm:pb-0 pt-[90px] sm:px-0">
@@ -54,7 +56,7 @@ const CommisionCalculator = () => {
                 placeholder="$500,000"
                 value={`$${homeValue.toLocaleString()}`}
                 onChange={handleInputChange}
-                className="bg-transparent outline-none text-[16px] text-right sm:text-[36px] font-semibold w-[180px] h-[54px] text-[#ED5272] placeholder:text-[#ED5272] mt-1 py-2"
+                className="bg-transparent outline-none text-[16px] text-right sm:text-[36px] font-semibold w-[180px] h-[54px] text-[#ED5272] mr-4 placeholder:text-[#ED5272] mt-1 py-2"
               />
               <div className="ml-2 sm:ml-0">
                 <MdKeyboardArrowUp
@@ -84,7 +86,7 @@ const CommisionCalculator = () => {
               <div className="w-[30%] bg-[#ED5272] absolute left-0 top-0 h-full"></div>
 
               <p className="text-right py-4 px-8 text-[#ED5272] text-[16px] sm:text-[36px] font-semibold">
-                $10,000
+                ${commission1Percent.toLocaleString()}
               </p>
             </div>
           </div>
@@ -98,7 +100,7 @@ const CommisionCalculator = () => {
               <div className="w-[60%] bg-[#B6CCFE] absolute left-0 top-0 h-full"></div>
 
               <p className="text-right py-4 px-8 text-[#18191F] text-[16px] sm:text-[36px] font-semibold">
-                $30,000
+                ${commission3Percent.toLocaleString()}
               </p>
             </div>
           </div>
