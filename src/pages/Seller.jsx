@@ -12,7 +12,7 @@ const Seller = () => {
       <HomeOwnerShip />
       <WhyChooseAgent />
       <CommisionCalculator />
-      <CalendyContact />
+      <CalendyContact title={"Sell"} />
     </div>
   );
 };

@@ -56,7 +56,8 @@ const CommisionCalculator = () => {
                 placeholder="$500,000"
                 value={`$${homeValue.toLocaleString()}`}
                 onChange={handleInputChange}
-                className="bg-transparent outline-none text-[16px] text-right sm:text-[36px] font-semibold w-[180px] h-[54px] text-[#ED5272] mr-4 placeholder:text-[#ED5272] mt-1 py-2"
+                className="bg-transparent outline-none text-[16px] text-right sm:text-[36px] font-semibold 
+                w-[180px] h-[54px] text-[#ED5272] mr-4 placeholder:text-[#ED5272] mt-1 py-2"
               />
               <div className="ml-2 sm:ml-0">
                 <MdKeyboardArrowUp

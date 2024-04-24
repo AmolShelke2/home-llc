@@ -3,6 +3,7 @@ import BuyerHero from "../Components/BuyerLanding/BuyerHero";
 import OptimizeExperience from "../Components/BuyerLanding/OptimizeExperience";
 import NeedFromUs from "../Components/EquityLanding/NeedFromUs";
 import Calculator from "../Components/BuyerLanding/Calculator";
+import CalendyContact from "../Components/SellerLanding/CalendyContact";
 
 const BuyerLandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const BuyerLandingPage = () => {
       <OptimizeExperience />
       <Calculator />
       <NeedFromUs />
+      <CalendyContact title={"Buy"} />
     </div>
   );
 };
