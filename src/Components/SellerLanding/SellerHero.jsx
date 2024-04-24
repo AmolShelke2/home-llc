@@ -82,12 +82,19 @@ const SellerHero = () => {
           </div>
 
           {/* hero buttons */}
-          <div className="w-full sm:h-[60px] sm:flex justify-center items-center sm:mt-20">
+          <div className="w-full sm:h-[60px] px-4 sm:px-0 flex flex-col sm:flex-row gap-8 justify-center items-center sm:mt-20">
             <button
               className="border border-white rounded-[50px] h-full w-full sm:w-[310px]
-             text-white py-3 sm:py-0 px-[10px] text-center sm:text-[22px] sm:leading-[32px] hover:bg-[#ED5272]
+             text-white py-3 sm:py-0 px-[10px] text-center sm:text-[22px] sm:leading-[32px] hover:bg-[#fff] hover:text-black
              hover:border-none">
               Schedule a call
+            </button>
+            <button
+              className="border border-white rounded-[50px] h-full w-full sm:w-[310px]
+             text-white py-3 sm:py-0 px-[10px] text-center sm:text-[22px]
+              sm:leading-[32px] hover:bg-white hover:text-black sm:hover:bg-[#ED5272] sm:hover:text-white
+             hover:border-none">
+              Check if you qualify
             </button>
           </div>
         </div>
