@@ -1,3 +1,12 @@
+import article1 from "../assets/press/article-1.png";
+import article2 from "../assets/press/article-2.png";
+import article3 from "../assets/press/article-3.png";
+import article4 from "../assets/press/article-4.png";
+
+import articleCompnay1 from "../assets/press/article-company-1.svg";
+import articleCompnay2 from "../assets/press/article-company-2.svg";
+import articleCompnay3 from "../assets/press/article-company-3.svg";
+
 const images = [
   { id: "nberg", image: require("../assets/scroller/1.png") },
   { id: "layer1", image: require("../assets/scroller/2.png") },
@@ -10,6 +19,70 @@ const images = [
 ];
 
 export default images;
+
+export const pressData = [
+  {
+    id: 1,
+    image: article1,
+    title: "6 ways to get a mortgage even if you think you aren’t eligible.",
+    companyLogo: articleCompnay1,
+    date: "July 31, 2021",
+  },
+  {
+    id: 2,
+    image: article2,
+    title: "Home.LLC, a down payment assistance provider.",
+    companyLogo: articleCompnay2,
+    date: "September 31, 2021",
+  },
+  {
+    id: 3,
+    image: article3,
+    title:
+      "We expect prices to continue increasing in 2022 - Nik Shah, CEO of Home.LLC",
+    companyLogo: articleCompnay2,
+    date: "September 31, 2021",
+  },
+  {
+    id: 4,
+    image: article4,
+    title:
+      "“Home owners have more equity in their homes than at any time in the last 30 years”",
+    companyLogo: articleCompnay3,
+    date: "September 31, 2021",
+  },
+];
+
+export const scrollerTexts = [
+  {
+    id: 1,
+    text: "One in three workers by the end of this decade will be on 1099s or running a small business,” said Nik Shah,.....",
+  },
+  {
+    id: 2,
+    text: "Most Florida markets face significant risk of oversupply of inventory,” Nik Shah, CEO of Home.LLC",
+  },
+  {
+    id: 3,
+    text: "Most cities will see a deceleration in home prices — not a crash, Home.LLC founder Nik Shah",
+  },
+  {
+    id: 4,
+    text: "Fortune and Home.LLC found that many of the housing markets with the highest risk levels are in.....",
+  },
+  {
+    id: 5,
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod ut accusantium maiores......",
+  },
+  {
+    id: 6,
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod ut accusantium maiores......",
+  },
+  {
+    id: 7,
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod ut accusantium maiores......",
+  },
+];
 
 export const howitworks = [
   {

@@ -12,6 +12,7 @@ import BlogsPage from "./pages/BlogsPage";
 import DetailsPage from "./pages/DetailsPage";
 import Seller from "./pages/Seller";
 import HomeEquityLanding from "./pages/HomeEquityLanding";
+import PressPage from "./pages/PressPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,6 +32,7 @@ root.render(
           path="/home-equity-qualify"
           element={<HomeEquityLanding />}
         />
+        <Route exact path="/press" element={<PressPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
