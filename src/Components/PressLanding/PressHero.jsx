@@ -9,12 +9,14 @@ const PressHero = () => {
   const [selectedArticle, setSelectedArticle] = useState(pressData[0]);
 
   return (
-    <div className="w-full h-[1117px] bg-press-landing bg-no-repeat bg-cover bg-center">
+    <div className="w-full h-full sm:h-[1117px] bg-press-landing bg-no-repeat bg-cover bg-center">
       <div className="h-full w-full bg-hero-section-overlay bg-cover">
-        <div className="flex justify-center items-center h-[88%]">
-          <div className="max-w-[1571px] h-[670px] mx-auto flex items-end gap-[113px]">
-            <div className="w-[1012px] h-[416px]">
-              <div className="mb-[80px]">
+        <div className="flex flex-col sm:flex-row justify-center items-center h-full sm:h-[88%]">
+          <div
+            className="w-full sm:w-full 2xl:max-w-[1571px] h-full mb-8 sm:mb-0 sm:h-[670px] 
+          2xl:mx-auto flex flex-col sm:flex-row items-start sm:items-end gap-[50px] sm:gap-[113px]">
+            <div className="w-full h-full px-4 sm:px-0 sm:w-[1012px] sm:h-[416px] mt-[100px] sm:mt-0">
+              <div className="mb-[40px] sm:mb-[80px]">
                 <img
                   src={selectedArticle.companyLogo}
                   height={59}
@@ -24,11 +26,13 @@ const PressHero = () => {
               </div>
 
               <div>
-                <span className="text-[22px] leading-[17px] text-[#B0AEAE] mb-[15px]">
+                <span className="text-[22px] leading-[17px] text-[#B0AEAE] sm:mb-[15px]">
                   {selectedArticle.date}
                 </span>
 
-                <h4 className="text-[64px] leading-[89px] font-[275px] text-white mb-[50px] ">
+                <h4
+                  className="text-[24px] leading-[40px] sm:text-[64px] 
+                sm:leading-[89px] font-[275px] text-white mb-[50px] mt-10 sm:mt-0">
                   {selectedArticle.title}
                 </h4>
 
@@ -58,7 +62,7 @@ const PressHero = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[446px] h-full flex flex-col gap-[50px]">
+            <div className="w-full px-4 sm:px-0 sm:w-[446px] h-full flex flex-col gap-[50px]">
               {pressData.map((data) => (
                 <button
                   className="w-full h-[130px] flex items-center gap-[22px] bg-[#ffffff] bg-opacity-[15%] rounded-md"
@@ -72,7 +76,7 @@ const PressHero = () => {
                     />
                   </div>
 
-                  <div className="w-[75%] py-[24px]">
+                  <div className="w-[75%] py-2 sm:py-[24px]">
                     <div className="flex items-end gap-[10px] mb-[15px]">
                       <img src={data.companyLogo} alt="yahoo" />
 
