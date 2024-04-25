@@ -14,6 +14,7 @@ import Seller from "./pages/Seller";
 import HomeEquityLanding from "./pages/HomeEquityLanding";
 import PressPage from "./pages/PressPage";
 import CulturePage from "./pages/CulturePage";
+import MsaLandingPage from "./pages/MsaLandingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -35,6 +36,7 @@ root.render(
         />
         <Route exact path="/press" element={<PressPage />} />
         <Route exact path="/culture" element={<CulturePage />} />
+        <Route exact path="/msa-predictions" element={<MsaLandingPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
