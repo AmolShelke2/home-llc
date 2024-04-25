@@ -14,7 +14,7 @@ const ResearchFramework = () => {
         scenarios of mortgage rates{" "}
       </p>
 
-      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-[42px] sm:gap-[57px] items-center px-[108px]">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-[42px] sm:gap-[57px] items-center px-[108px] cursor-pointer">
         <div
           className="relative w-[382px] h-[349px] sm:w-[466px] sm:h-[426px] rounded-lg"
           style={{
@@ -37,7 +37,7 @@ const ResearchFramework = () => {
         </div>
 
         <div
-          className="relative w-[382px] h-[349px] sm:w-[466px] sm:h-[426px] rounded-lg"
+          className="relative w-[382px] h-[349px] sm:w-[466px] sm:h-[426px] rounded-lg cursor-pointer"
           style={{
             backgroundImage: `url(${framework2})`,
             backgroundSize: "cover",
@@ -57,7 +57,7 @@ const ResearchFramework = () => {
           </div>
         </div>
         <div
-          className="relative w-[382px] h-[349px] sm:w-[466px] sm:h-[426px] rounded-lg"
+          className="relative w-[382px] h-[349px] sm:w-[466px] sm:h-[426px] rounded-lg cursor-pointer"
           style={{
             backgroundImage: `url(${framework3})`,
             backgroundSize: "cover",
