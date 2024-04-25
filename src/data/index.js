@@ -7,6 +7,55 @@ import articleCompnay1 from "../assets/press/article-company-1.svg";
 import articleCompnay2 from "../assets/press/article-company-2.svg";
 import articleCompnay3 from "../assets/press/article-company-3.svg";
 
+import principle1 from "../assets/culture/Principle1.svg";
+import principle2 from "../assets/culture/Principle2.svg";
+import principle3 from "../assets/culture/Principle3.svg";
+import principle4 from "../assets/culture/Principle4.svg";
+import principle5 from "../assets/culture/Principle5.svg";
+import principle6 from "../assets/culture/Principle6.svg";
+import principle7 from "../assets/culture/Principle7.svg";
+import principle8 from "../assets/culture/Principle8.svg";
+import principle9 from "../assets/culture/Principle9.svg";
+
+export const principlesData = [
+  {
+    id: 1,
+    img: principle1,
+  },
+  {
+    id: 2,
+    img: principle2,
+  },
+  {
+    id: 3,
+    img: principle3,
+  },
+  {
+    id: 4,
+    img: principle4,
+  },
+  {
+    id: 5,
+    img: principle5,
+  },
+  {
+    id: 6,
+    img: principle6,
+  },
+  {
+    id: 7,
+    img: principle7,
+  },
+  {
+    id: 8,
+    img: principle8,
+  },
+  {
+    id: 9,
+    img: principle9,
+  },
+];
+
 const images = [
   { id: "nberg", image: require("../assets/scroller/1.png") },
   { id: "layer1", image: require("../assets/scroller/2.png") },

@@ -17,6 +17,7 @@ module.exports = {
           "url('../src/assets/calendy-contact-bg.png')",
         "home-equity-qualify": "url('../src/assets/qualify-landing-bg.png')",
         "press-landing": "url('../src/assets/press-landing-bg.png')",
+        "culture-principle": "url('../src/assets/culture-principle-bg.png')",
       },
       placeholderColor: ["responsive", "dark", "focus", "hover"], // enable placeholder colors
     },
