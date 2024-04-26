@@ -32,7 +32,7 @@ const btnsRight = [
 
 const HowItWorks = () => {
   return (
-    <div className="w-full h-full lg:h-[1625px] bg-[#0041A3] py-20 sm:pt-[101px] relative">
+    <div className="hidden sm:block w-full h-full lg:h-[1625px] bg-[#0041A3] py-20 sm:pt-[101px] relative">
       <h2 className="text-[22px] leading-[33px] text-white sm:text-[48px] sm:leading-[66px] font-semibold text-center capitalize mb-[24px]">
         How It Works
       </h2>
